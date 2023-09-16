@@ -22,6 +22,18 @@ color: white;
 font-family: 'Times New Roman', Times, serif
 }
 
+@media screen and (max-width: 792px) {/*responsive-logo-title*/
+  .header h2 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 644px) {
+  .header h2 {
+    display: none;
+  }
+}
+
 .header-item-searchbar{
 display: flex;
 align-items: center;
@@ -39,6 +51,20 @@ padding: 10px;
 border: 1px solid #8db600;
 border-radius: 25px 0 0 25px;
 }
+
+@media screen and (max-width: 1399px) {/*RESPONSIVE-SEARCH-BOX*/
+  input[type="text"] {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  input[type="text"] {
+    display: none;
+    
+  }
+}
+
 input[type="submit"]{
 border-radius: 0 25px 25px 0;
 border: none;
@@ -48,6 +74,17 @@ height: 47px;
 outline: none;
 cursor: pointer;
 background-color: grey
+}
+/*RESPONSIVE-SEARCH-BUTTON*/
+@media screen and (max-width: 1399px) {
+  input[type="submit"] {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  input[type="submit"] {
+    display: none;
+  }
 }
 /*Account*/
 
@@ -64,7 +101,12 @@ list-style: none;
 gap: 30px;
 
 }
-
+@media screen and (max-width: 1185px) {
+  .header-item-account ul {
+gap: 25px;
+  }
+  
+}
 .header-item-account li a{
 text-decoration: none;
 color: white;
@@ -135,6 +177,12 @@ border: 2px solid rgba(128, 128, 251285, 0.3);
 background-color: rgba(128, 128, 128, 0.5);
 height: 100%;
 }
+/*FRUITS_VEGETABLE-SHOP*/
+.shop a{
+  color: rgb(0, 0, 0);
+text-decoration: none;
+}
+
 
 /*view-all-fruits*/
 .view-all{
@@ -160,38 +208,3 @@ height: 100%;
 
 
 /*DROP-DOWN-MENU-BAR*/
-.dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-  .dropdown:hover .dropdown-content {display: block;}
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
