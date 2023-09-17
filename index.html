@@ -15,23 +15,24 @@
 <body>
     <main>
         <div class="header">
-            <a href=>
+            <a href="#">
                 <img src="EL_MERCADO_LOGO.png" alt="logo" width="150px" />
             </a>
-            <h2>El Mercado De Marites</h2>
-            <div class="header-item-searchbar d-none d-sm-none d-md-block align-self-center">
-                <input type="text" placeholder="type..." />
-                <input type="submit" name="" value="search" />
+            <h2><a href="index.html">El Mercado De Marites</a></h2>
+            <div class="header-item-searchbar">
+                <input type="text" placeholder="Search..." />
+                <input type="submit" name="" value="Enter" />
+                
             </div>
             <div class="header-item-account">
                 <ul>
-                    <li><a href="#">Home</a></li>
                     <li><a href="#"><i class="ri-user-line"></i>Account</a></li>
                     <li><a href="#"><i class="ri-shopping-cart-line"></i>Cart</a></li>
                 </ul>
             </div>
         </div>
     </main>
+    <!----------Carousel---------->
     <section>
         <div class="row">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -59,10 +60,11 @@
             </div>
         </div>
     </section>
+    <!----------Fruits-container---------->
     <article>
-        <div class="shop"><!--Fruits-container-->
-            <a href=#>
-                <h2>Fruits</h2>
+        <div class="shop">
+            <a href="fruits.html">
+                <h2><b>FRUITS</b></h2>
             </a>
         </div>
         <div class="container">
@@ -114,16 +116,11 @@
                 </div>
             </div>
         </div>
-         <div class="view-all">
-                <ul>
-                    <a href="fruits.html"><li>view all</li></a>
-                </ul>
-            </div>
-            <!--VEGETABLES PRODUCT-->
+            <!----------Vegetable-container---------->
             <article>
                 <div class="shop">
-                    <a href=#>
-                        <h2>VEGETABLES</h2>
+                    <a href="vegetable.html">
+                        <h2><b>VEGETABLES</b></h2>
                     </a>
                 </div>
                 <div class="container">
@@ -174,12 +171,129 @@
                         </div>
                     </div>
                 </div>
-                <div class="view-all2">
-                        <ul>
-                            <a href="vegetable.html"><li>view all</li></a>
-                        </ul>
-                    </div>
             </article>
+            <!----------Nuts-container---------->
+            <article>
+                <div class="shop">
+                    <a href="nuts.html">
+                        <h2><b>NUTS</b></h2>
+                    </a>
+                </div>
+                <div class="container">
+                    <div class="row my-3">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="n-Almond.png" class="card-img-top" alt="Almond">
+                                <div class="card-body">
+                                <h5 class="card-title">Almond</h5>
+                                <p class="card-text">Almonds are rich in important nutrients for your body, including magnesium, vitamin E, and fiber. 
+                                    Almonds have both calcium and phosphorus, which are good for bone health. Almonds seem to help curb blood sugar spikes after meals, 
+                                    which is key for people with diabetes.</p>
+                                <a href="#" class="btn btn-primary">₱170 (per kilo)</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="n-Brazil nuts.png" class="card-img-top" alt="Brazil nuts">
+                                <div class="card-body">
+                                <h5 class="card-title">Brazil Nuts</h5>
+                                <p class="card-text">Brazil nuts have several antioxidants, including vitamin E and phenols. Lowering inflammation can help to reduce your
+                                     risk of various health conditions, 
+                                    such as heart disease, diabetes, and certain types of cancer.</p>
+                                <a href="#" class="btn btn-primary">₱45 (per kilo)</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="n-cashew nuts.png" class="card-img-top" alt="Cashew Nuts">
+                                <div class="card-body">
+                                <h5 class="card-title">Cashew Nuts</h5>
+                                <p class="card-text">Cashews are rich in fiber, protein, and healthy fats. They also contain a variety of vitamins, minerals, and health-protective beneficial plant compounds. 
+                                    Similarly to nuts, cashews may promote weight loss, blood sugar control, and heart health.</p>
+                                <a href="#" class="btn btn-primary">₱450 (per kilo)</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="n-Hazzel nuts.png" class="card-img-top" alt="Hazel nuts">
+                                <div class="card-body">
+                                <h5 class="card-title">Hazel nuts</h5>
+                                <p class="card-text">azelnuts have antioxidant and anti-inflammatory properties that promote heart health, reduce cancer risk, and improve brain function.
+                                     They also promote digestion, boost immunity, and strengthen bones. </p>
+                                <a href="#" class="btn btn-primary">₱150 (per kilo)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>  
+    <!----------FOOTER---------->
+            <footer>
+                <div class="email">
+                    <h3>CONNECT WITH US</h3>
+                    <p>Get updated with our new products and special offers.</p>
+                    <div class="email-text">
+                        <input type="text" placeholder="Email@yourdomain.com" />
+                    </div>
+                    <div class="email-subscribe">
+                        <input type="submit"value="Subscribe!"/>
+                    </div>
+                </div>
+                    <div class="upper-footer ">
+                        <h1>
+                            <a href="#"><img src="EL_MERCADO_LOGO.png" width="100px"></a>
+                            <a href="index.html">El Mercado De Marites</a>
+                        </h1>
+                        <div class="footer-info">
+                            <div class="info">
+                                <h5>Information</h5>
+                                <ul>
+                                    <li>
+                                        <a href="#">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy & Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms & Conditions</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contact-info">
+                                <h5>Contact info</h5>
+                                <ul>
+                                    <li><i class="ri-building-4-fill"></i>1234 Iniwan ka St.,<br/>Hindi nagparamdam bldg, May kulang ka City,<br/>Broken State, Bigo Country</li>
+                                    <li><i class="ri-phone-fill"></i>09221-168-999</li>
+                                    <li><i class="ri-mail-fill"></i>marites@gmail.com</li>
+                                </ul>
+                            </div>
+                            <div class="follow-us">
+                                <h5>Follow us</h5>
+                                    <a href="#" class="icon">
+                                    <i class="ri-facebook-circle-fill"></i>
+                                </a>
+                                <a href="#"  class="icon">
+                                    <i class="ri-instagram-fill"></i>
+                                </a>
+                                <a href="#"  class="icon">
+                                    <i class="ri-twitter-fill"></i>
+                                </a>
+                                <a href="#"  class="icon">
+                                    <i class="ri-youtube-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bottom-footer">
+                            <p>copyright<i class="ri-copyright-line"></i>2023</p>
+                        </div>
+                    </div>  
+                </footer>
+                
+                    
+                    
 
 
 

@@ -4,9 +4,16 @@ margin: 0;
 overflow-x: hidden;
 }
 
-/*header*/
+body {
+background: #fffde7;
+
+}
+h1, h5, h3, h2{
+  overflow: hidden;
+}
+/*-----HEADER-----*/
 main{
-background:#8db600 
+background:#86B049;
 }
 
 .header{
@@ -18,8 +25,12 @@ gap: 10px;
 .header h2{
 display: flex;
 align-items: center;
-color: white;
 font-family: 'Times New Roman', Times, serif
+}
+
+.header h2 a{
+  text-decoration: none;
+  color: white
 }
 
 @media screen and (max-width: 792px) {/*responsive-logo-title*/
@@ -46,20 +57,20 @@ font-size: 20px;
 
 input[type="text"]{
 width: 400px;
-height: 30%;
+height: 55%;
 padding: 10px;
-border: 1px solid #8db600;
+border: 1px solid #4CBB17;
 border-radius: 25px 0 0 25px;
 }
-
-@media screen and (max-width: 1399px) {/*RESPONSIVE-SEARCH-BOX*/
-  input[type="text"] {
+/*-----RESPONSIVE-SEARCH-BOX-----*/
+@media screen and (max-width: 1399px) {
+  .header-item-searchbar input[type="text"] {
     width: 250px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  input[type="text"] {
+  .header-item-searchbar input[type="text"] {
     display: none;
     
   }
@@ -73,21 +84,21 @@ width: 100px;
 height: 47px;
 outline: none;
 cursor: pointer;
-background-color: grey
+  background-color: #526B88;
 }
-/*RESPONSIVE-SEARCH-BUTTON*/
+/*-----RESPONSIVE-SEARCH-BUTTON-----*/
 @media screen and (max-width: 1399px) {
-  input[type="submit"] {
+  .header-item-searchbar input[type="submit"] {
     width: 80px;
   }
 }
 @media screen and (max-width: 1199px) {
-  input[type="submit"] {
+  .header-item-searchbar input[type="submit"] {
     display: none;
   }
 }
-/*Account*/
 
+/*-----ACCOUNT-----*/
 .header-item-account{
 display: flex;
 justify-content: center;
@@ -118,24 +129,25 @@ background-color: grey;
 border-radius: 100px;
 
 }
-/*section-carousel*/
+/*-----CAROUSEL-----*/
 .carousel-inner img{
 padding: 40px;
 height: 500px;
 }
-/*article-fruits*/
-/*fruits-card*/
+/*-----ARTICLE-----*/
 .container{
-background:#8db600;
+background:#476930;
 justify-content: center;
 align-self: center;
+border-radius: 15px;
 }
 
 .btn{
 text-shadow: -3px 2px 5px rgba(0, 0, 0, 5), 3px -1px 3px white;
 }  
+/*-----CARD-DESIGN-----*/
 /*all card design*/
-.card {/*-----transparent---glass---backgound-----*/
+.card {/*----------transparent-glass-backgound----------*/
 border: 2px solid rgba(255, 255, 255, 0.3);
 background-color: rgba(255, 255, 255, 0.2);
 border-radius: 20px;
@@ -160,7 +172,6 @@ font-family: Arial, Helvetica, sans-serif;
 color: white;
 }
 
-
 .card-body{ /*----------text-transition----------*/
 position: absolute;
 bottom: 10px;
@@ -177,34 +188,116 @@ border: 2px solid rgba(128, 128, 251285, 0.3);
 background-color: rgba(128, 128, 128, 0.5);
 height: 100%;
 }
+
 /*FRUITS_VEGETABLE-SHOP*/
+.shop {
+  padding: 15px;
+  margin-top: 50px;
+  margin-left: 90px;
+}
 .shop a{
-  color: rgb(0, 0, 0);
+  color: #526B88;
 text-decoration: none;
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
-/*view-all-fruits*/
-.view-all{
-    display: flex;
-    justify-content: end;
+/*-----FOOTER-----*/
+/*upper-footer*/
+.email{
+  background: #767676;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  margin-top: 70px;
+}
+.email h3{
+font-family: 'Times New Roman', Times, serif;
+font-weight: bolder;
+}
+.email-text input[type="text"]{
+width: 500px;
+border-radius: 0%;
+
 }
 
-.view-all a{
-    text-decoration: none;
-    color: black;
+.email-text input[placeholder="Email@yourdomain.com"]{
+text-align: center;
 }
 
-/*view-all-vegetables*/
-.view-all2{
-    display: flex;
-    justify-content: end;
+.email-subscribe input[type="submit"]{
+background-color: #b70000;
+font-weight: bold;
+font-family: sans-serif;
+width: 500px;
+margin-top: 10px;
+border-radius: 0%;
 }
 
-.view-all2 a{
-    text-decoration: none;
-    color: black;
+.email-subscribe input[type="submit"]:hover{
+font-size: 1.5em;
+}
+
+.upper-footer{
+  background: #86B049;
+  color: white;
+}
+
+.upper-footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.upper-footer h1{
+  font-family: 'Times New Roman', Times, serif;
+padding: 20px;
+}
+/*mid-footer*/
+.footer-info{
+  display: flex;
+  justify-content: space-around;
+}
+.info a:hover {
+  text-decoration: underline;
+}
+
+/*ICON*/
+.icon{
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+.ri-facebook-circle-fill:hover{
+  font-size: 2.5em;
+  color: rgb(24, 119, 242);
+}
+
+.ri-instagram-fill:hover{
+  font-size: 2.5em;
+  color: pink;
+}
+
+.ri-twitter-fill:hover{
+  font-size: 2.5em;
+  color: rgb(135, 206, 235);
+
+}
+
+.ri-youtube-fill:hover{
+  font-size: 2.5em;
+  color: rgb(255, 0, 0);
+}
+
+/*bottom-footer*/
+.bottom-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid rgb(72, 173, 72);
+  padding-top: 10px;
 }
 
 
-/*DROP-DOWN-MENU-BAR*/
+
+
