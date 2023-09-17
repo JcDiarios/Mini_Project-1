@@ -1,1 +1,1 @@
-mini-project-1-eight.vercel.app
+mini-project-1-bdek.vercel.app
